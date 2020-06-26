@@ -10,8 +10,6 @@ print("Starting Connection on " + HOST + ":" + PORT)
 
 def send_message(msg):
     s.send(msg.encode())
-    response = s.recv(1024).decode()
-    print(response)
 
 send_message("Test!")
 
